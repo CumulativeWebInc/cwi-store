@@ -33,6 +33,10 @@ Two modes, switched automatically per product by `docs/BUY_LINKS.json`:
 }
 ```
 
+A `live` slot also carries `"verified"` — a provenance marker (date + how the
+URL was verified: right product, right price, seen live). The honesty tests
+reject any real checkout URL whose slot lacks it.
+
 Rules enforced by `tests/test_store.py`:
 - `status` must be one of `pending` / `live` / `disabled`.
 - A non-`live` slot must have an **empty** `checkout_url` — no fabricated
