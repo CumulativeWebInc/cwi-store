@@ -1,1 +1,26 @@
-{"_note":"LIVE — checkout is live via Gumroad. All three checkout_urls were created, published, and price-verified on the public storefront on 2026-09-17.","evidence-report":{"checkout_url":"https://gumroad.com/l/playlist-evidence-report","payment_provider":"gumroad","status":"live","verified":"2026-09-17: published and price-checked ($49) on the live Gumroad storefront by browser task"},"pitch-kit":{"checkout_url":"https://gumroad.com/l/playlist-pitch-kit","payment_provider":"gumroad","status":"live","verified":"2026-09-17: published and price-checked ($19) on the live Gumroad storefront by browser task"},"sync-pack":{"checkout_url":"https://gumroad.com/l/sync-readiness-pack","payment_provider":"gumroad","status":"live","verified":"2026-09-17: published and price-checked ($149) on the live Gumroad storefront by browser task"}}
+{
+  "_note": "LIVE \u2014 checkout is live via Gumroad. All three checkout_urls were created, published, and price-verified on the public storefront on 2026-09-17.",
+  "evidence-report": {
+    "checkout_url": "https://gumroad.com/l/playlist-evidence-report",
+    "payment_provider": "gumroad",
+    "status": "live",
+    "verified": "2026-09-17: published and price-checked ($49) on the live Gumroad storefront by browser task"
+  },
+  "pitch-kit": {
+    "checkout_url": "https://gumroad.com/l/playlist-pitch-kit",
+    "payment_provider": "gumroad",
+    "status": "live",
+    "verified": "2026-09-17: published and price-checked ($19) on the live Gumroad storefront by browser task"
+  },
+  "sync-pack": {
+    "checkout_url": "https://gumroad.com/l/sync-readiness-pack",
+    "payment_provider": "gumroad",
+    "status": "live",
+    "verified": "2026-09-17: published and price-checked ($149) on the live Gumroad storefront by browser task"
+  },
+  "twenty-minds-engine": {
+    "checkout_url": "",
+    "payment_provider": "",
+    "status": "pending"
+  }
+}
