@@ -35,6 +35,17 @@
       "Email:",
       "Spotify artist URL:",
       "Playlists I believe I'm on:"
+    ].join("\n"),
+    "sync-pack": [
+      "Hello CWI,",
+      "",
+      "I'd like to order:",
+      "",
+      "Product: Sync Readiness Pack",
+      "Price: $149 USD",
+      "",
+      "Name:",
+      "Email:"
     ].join("\n")
   };
 
