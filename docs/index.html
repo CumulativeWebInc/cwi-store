@@ -208,6 +208,37 @@
        data-price="$49"></div>
 </article>
 
+<!-- STORE CARD -->
+<!-- PRODUCT -->
+<article class="card" id="skill-doctor-lite">
+  <div class="price">TBD</div>
+  <h2>Skill Doctor Lite</h2>
+  <p class="subtitle">A static, offline linter for installed AI-agent skills. Scan before you install.</p>
+  <div class="desc">
+    <p><strong>What it is:</strong> a one-command scan over your installed skills — each skill directory checked against 25 versioned signature rules for prompt-injection text ("ignore previous instructions" and friends), exfiltration lines (pipe-to-shell, environment or key material sent to URLs), approval-disabling instructions ("never ask for confirmation", "disable guardrails"), and embedded secret material (AWS-key and API-key patterns, flagged as possible). Stdlib Python only: no dependencies, no network, no telemetry. You get a severity-triaged report with an explicit PASS/FAIL verdict, in human-readable text or machine-readable JSON for CI gates.</p>
+    <p><strong>What it is not:</strong> it never executes skill code, runs no sandbox, and does no runtime analysis. Signature-based detection can miss novel attacks and can false-positive on benign text. A PASS means no known-bad pattern matched — it is signature triage, never a certificate of safety. We say that on every report because a trusted "clean" badge on a poisoned skill would be worse than no scan at all.</p>
+  </div>
+  <div class="contents">
+    <h3>What you get</h3>
+    <ul>
+      <li>skill_doctor Python package (scan, rules, version subcommands; exit codes 0 clean / 1 findings / 2 error)</li>
+      <li>25-rule versioned catalog with per-rule guidance, JSON + text reports (every report pins its rules_version)</li>
+      <li>Fixture skills and a 52-test suite, all green, so you can verify the claims yourself in under 5 minutes</li>
+    </ul>
+    <p class="delivery">Delivered as a zip of the Python package with README quickstart; runs anywhere Python 3.8+ runs. No account, no phone-home.</p>
+  </div>
+  <div class="terms">
+    <h3>Terms</h3>
+    <ul>
+      <li><strong>Status:</strong> v1 in final testing — order via email for early access. Price announced at launch.</li>
+      <li><strong>Refunds:</strong> full refund within 14 days of purchase, no questions asked.</li>
+    </ul>
+  </div>
+  <div class="buy-slot" data-id="skill-doctor-lite"
+       data-name="Skill Doctor Lite"
+       data-price="TBD"></div>
+</article>
+
 <!-- MRPE-PRODUCTS -->
 
   </section>

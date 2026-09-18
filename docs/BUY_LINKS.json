@@ -27,5 +27,10 @@
     "checkout_url": "",
     "payment_provider": "",
     "status": "pending"
+  },
+  "skill-doctor-lite": {
+    "checkout_url": "",
+    "payment_provider": "",
+    "status": "pending"
   }
 }
