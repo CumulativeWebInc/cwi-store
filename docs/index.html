@@ -239,6 +239,37 @@
        data-price="TBD"></div>
 </article>
 
+<!-- STORE CARD -->
+<!-- PRODUCT -->
+<article class="card" id="verdict-ledger">
+  <div class="price">TBD</div>
+  <h2>Verdict Ledger</h2>
+  <p class="subtitle">An invalidation primitive for cached verification verdicts. Record, re-check, catch stale truth.</p>
+  <div class="desc">
+    <p><strong>What it is:</strong> verification verdicts are snapshots, and snapshots go stale. Verdict Ledger records each verdict with sha256 snapshots of its evidence in an append-only local ledger, then re-checks that evidence on your schedule. The moment the evidence drifts or the TTL expires, it appends a superseding STALE envelope with the exact reason — <em>evidence-drift:&lt;source&gt;</em> or <em>ttl-expired</em> — and exits 1 for cron and CI gates. Unreachable evidence is an error, never a silent pass. Stdlib Python only: no dependencies, no telemetry, the only network traffic is the evidence fetches you point it at. Exit codes: 0 all current / 1 stale findings / 2 error. Default TTL is 30 days, matching the STALE rule CWI runs on its own Placement Wall.</p>
+    <p><strong>What it is not:</strong> it never proves a verdict correct — CURRENT means the evidence has not moved since recording, nothing more, and every report says so. It is not tamper-proof: the ledger file is append-only by convention, not cryptography. The build-week receipts demonstrate two real stale catches (an evidence-drift catch over live HTTP and a TTL-expiry catch) plus one honest refusal, documented verbatim in the repo — check them before you buy.</p>
+  </div>
+  <div class="contents">
+    <h3>What you get</h3>
+    <ul>
+      <li>verdict_ledger Python package (record, recheck, status, version subcommands; envelope schema cwi.verdict-envelope/1.0)</li>
+      <li>Append-only JSONL ledger: old envelopes are never rewritten — currentness is computed from each lineage's newest record, so the chain shows every correction</li>
+      <li>Text + JSON reports (cwi.verdict-ledger-report/1.0) naming exactly what went stale and why; 75-test suite, all green, verifiable in under 5 minutes</li>
+    </ul>
+    <p class="delivery">Delivered as a zip of the Python package with README quickstart; runs anywhere Python 3.8+ runs. No account, no phone-home.</p>
+  </div>
+  <div class="terms">
+    <h3>Terms</h3>
+    <ul>
+      <li><strong>Status:</strong> v1 in final testing — order via email for early access. Price announced at launch.</li>
+      <li><strong>Refunds:</strong> full refund within 14 days of purchase, no questions asked.</li>
+    </ul>
+  </div>
+  <div class="buy-slot" data-id="verdict-ledger"
+       data-name="Verdict Ledger"
+       data-price="TBD"></div>
+</article>
+
 <!-- MRPE-PRODUCTS -->
 
   </section>

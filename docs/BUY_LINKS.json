@@ -32,5 +32,10 @@
     "checkout_url": "",
     "payment_provider": "",
     "status": "pending"
+  },
+  "verdict-ledger": {
+    "checkout_url": "",
+    "payment_provider": "",
+    "status": "pending"
   }
 }
