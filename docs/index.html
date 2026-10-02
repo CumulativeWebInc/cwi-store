@@ -270,6 +270,49 @@
        data-price="TBD"></div>
 </article>
 
+<!-- STORE CARD (filled 2026-10-02; mrpe-publish change-control pending) -->
+<!-- PRODUCT -->
+<article class="card" id="change-control">
+  <div class="price">TBD</div>
+  <h2>Change Control</h2>
+  <p class="subtitle">A review trail for agent behavior changes — propose, diff, approve, and prove it happened.</p>
+  <div class="desc">
+    <p>When prompts and configs change silently, every bug becomes a
+    mystery. Change Control treats agent behavior changes like code
+    changes: propose a change (with sha256 snapshots of the exact file
+    bytes at proposal time), diff each file against its snapshot, and
+    record a named approve/reject decision in an append-only JSONL
+    ledger. Old rows are never mutated, so "who changed what, when,
+    and who signed off" is a computed fact, not a reconstructed one.</p>
+    <p>What it is not: it records review trails, it does not enforce
+    them. Anyone can still edit files outside the pipeline — the tool
+    then flags the drift on the next diff, but it cannot stop the edit.
+    Approval means a named reviewer said so; it is not a verdict that
+    the change is good, and author/reviewer names are asserted, not
+    authenticated.</p>
+  </div>
+  <div class="contents">
+    <h3>What you get</h3>
+    <ul>
+      <li>Stdlib-only Python CLI: propose, diff, review, status, audit, version</li>
+      <li>Append-only JSONL ledger with pinned envelope and audit schemas</li>
+      <li>Unified diffs vs proposal-time snapshots with drift flags</li>
+      <li>41-test suite, green, plus build receipts (RECEIPTS.md)</li>
+    </ul>
+    <p class="delivery">Delivered as source with tests. No accounts, no telemetry, runs anywhere Python 3.8+ runs.</p>
+  </div>
+  <div class="terms">
+    <h3>Terms</h3>
+    <ul>
+      <li><strong>Status:</strong> v1.0.0 built and tested — order via email for early access. Price announced at launch (TBD, pending approval).</li>
+      <li><strong>Refunds:</strong> full refund within 14 days of purchase, no questions asked.</li>
+    </ul>
+  </div>
+  <div class="buy-slot" data-id="change-control"
+       data-name="Change Control"
+       data-price="TBD"></div>
+</article>
+
 <!-- MRPE-PRODUCTS -->
 
   </section>

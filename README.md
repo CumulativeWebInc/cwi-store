@@ -8,17 +8,22 @@ Vanilla HTML/CSS/JS, zero dependencies, served by GitHub Pages from `/docs`.
 
 Two modes, switched automatically per product by `docs/BUY_LINKS.json`:
 
-- **Pending (today):** every product's `status` is `"pending"` with an empty
-  `checkout_url`, so each product card's primary button is a prefilled
+- **Pending:** a slot whose `status` is `"pending"` with an empty
+  `checkout_url` — its card's primary button is a prefilled
   `mailto:` to hp@cumulativeweb.com (labeled "Order via email") with a
   secondary "Online checkout opens soon." line.
-- **Live:** once Black pastes a real payment URL into a product's
-  `checkout_url`, sets `payment_provider` (`"gumroad"` or `"stripe"`), and
-  flips `status` to `"live"`, that card's button becomes "Buy now" pointing
+- **Live:** once a real payment URL is pasted into a product's
+  `checkout_url`, `payment_provider` (`"gumroad"` or `"stripe"`) set, and
+  `status` flipped to `"live"`, that card's button becomes "Buy now" pointing
   at checkout, the note becomes "Secure checkout via Gumroad/Stripe.", and
   the card's delivery line switches from email fulfillment to
   provider-appropriate delivery copy. When all products are live, the page
   header and "How ordering works" step 1 switch to checkout wording too.
+
+Current state (2026-10-01): 3 slots LIVE via Gumroad, all price-verified on
+2026-09-17 — `pitch-kit` ($19), `evidence-report` ($49), `sync-pack` ($149).
+4 slots pending (order via email) — `twenty-minds-engine`, `verdict-cli`,
+`skill-doctor-lite`, `verdict-ledger`.
 
 ### BUY_LINKS.json schema (v2)
 

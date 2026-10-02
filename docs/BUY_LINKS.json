@@ -37,5 +37,10 @@
     "checkout_url": "",
     "payment_provider": "",
     "status": "pending"
+  },
+  "change-control": {
+    "checkout_url": "",
+    "payment_provider": "",
+    "status": "pending"
   }
 }
